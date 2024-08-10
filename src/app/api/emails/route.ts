@@ -1,11 +1,10 @@
 import { Resend } from "resend";
-import type { NextApiRequest, NextApiResponse } from "next";
 
 import Test from "@/emails/test";
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 
-export async function POST(req: NextApiRequest, res: NextApiResponse) {
+export async function POST() {
   try {
     await resend.emails.send({
       from: "signature@dhruvrayat.com",
@@ -14,8 +13,8 @@ export async function POST(req: NextApiRequest, res: NextApiResponse) {
       react: Test(),
     });
 
-    return res.status(200);
+    return new Response("OK", { status: 200 });
   } catch (err) {
-    return res.status(500).send(err);
+    return new Response(String(err), { status: 500 });
   }
 }
