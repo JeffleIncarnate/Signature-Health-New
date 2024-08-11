@@ -1,0 +1,50 @@
+@import "../../variables";
+
+.JoinOurTeam {
+  width: 100%;
+  margin: 5rem 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 5rem;
+
+  @media screen and (max-width: 1200px) {
+    width: 90%;
+    margin: 5rem 5%;
+  }
+
+  .Jobs {
+    text-align: center;
+
+    h2 {
+      font-size: 4rem;
+    }
+
+    p {
+      font-size: 1.5rem;
+      margin-top: 1rem;
+    }
+
+    @media screen and (max-width: 1400px) {
+      h2 {
+        font-size: 3rem;
+      }
+
+      p {
+        font-size: 1.1rem;
+      }
+    }
+
+    @media screen and (max-width: 900px) {
+      h2 {
+        font-size: 2.5rem;
+      }
+
+      p {
+        font-size: 1rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,171 @@
+@import "../../variables";
+
+.OurTeamMain {
+  width: 100%;
+  margin: 5rem 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 5rem;
+
+  > .Top {
+    width: 75%;
+    margin: 0 12.5%;
+
+    text-align: center;
+
+    h2 {
+      font-size: 4rem;
+    }
+
+    p {
+      font-size: 1.5rem;
+    }
+
+    @media screen and (max-width: 1400px) {
+      h2 {
+        font-size: 3rem;
+      }
+
+      p {
+        font-size: 1.1rem;
+      }
+    }
+
+    @media screen and (max-width: 1200px) {
+      width: 90%;
+      margin: 0 5%;
+    }
+
+    @media screen and (max-width: 900px) {
+      h2 {
+        font-size: 2.5rem;
+      }
+
+      p {
+        font-size: 1rem;
+      }
+    }
+  }
+
+  > .Team {
+    width: 75%;
+    margin: 0 12.5%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img {
+      width: 100%;
+      border-radius: 1rem;
+    }
+  }
+
+  > .PersonInTeam {
+    width: 75%;
+    margin: 0 12.5%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    > .Left {
+      flex-direction: row-reverse;
+
+      @media screen and (max-width: 900px) {
+        flex-direction: column;
+      }
+    }
+
+    > .Right {
+      flex-direction: row;
+
+      @media screen and (max-width: 900px) {
+        flex-direction: column;
+      }
+    }
+
+    > .Person {
+      width: 100%;
+      margin: 1rem 0;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 3rem;
+
+      @media screen and (max-width: 900px) {
+        margin: 2rem 0;
+      }
+
+      > .Image {
+        width: 30%;
+
+        > img {
+          width: 100%;
+          border-radius: 1rem;
+        }
+
+        @media screen and (max-width: 900px) {
+          width: 50%;
+
+          min-width: 300px;
+        }
+      }
+
+      > .Text {
+        width: 70%;
+
+        h2 {
+          font-size: 4rem;
+        }
+
+        p {
+          font-size: 1.5rem;
+        }
+
+        @media screen and (max-width: 900px) {
+          width: 100%;
+          text-align: center;
+        }
+      }
+    }
+
+    @media screen and (max-width: 1400px) {
+      > .Person {
+        > .Text {
+          h2 {
+            font-size: 3rem;
+          }
+
+          p {
+            font-size: 1.1rem;
+          }
+        }
+      }
+    }
+
+    @media screen and (max-width: 1200px) {
+      width: 90%;
+      margin: 0 5%;
+    }
+
+    @media screen and (max-width: 900px) {
+      > .Person {
+        > .Text {
+          h2 {
+            font-size: 2.5rem;
+          }
+
+          p {
+            font-size: 1rem;
+          }
+        }
+      }
+    }
+  }
+}

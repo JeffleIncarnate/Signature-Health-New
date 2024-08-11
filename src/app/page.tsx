@@ -1,15 +1,19 @@
-"use client";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Home | Signature Health",
+};
+
+import Header from "@/components/header/header";
+import HomeMain from "@/components/homeMain/homeMain";
+import Footer from "@/components/footer/footer";
 
 export default function Home() {
   return (
-    <main className="text-2xl">
-      <button
-        onClick={async () => {
-          await fetch("/api/emails", { method: "POST" });
-        }}
-      >
-        Send Email!
-      </button>
-    </main>
+    <>
+      <Header />
+      <HomeMain />
+      <Footer />
+    </>
   );
 }

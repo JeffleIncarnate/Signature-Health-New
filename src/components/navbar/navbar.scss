@@ -1,0 +1,206 @@
+@import "../../variables";
+
+.Navbar {
+  width: 100%;
+
+  padding: 2rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  > .Navbar__Home {
+    display: flex;
+
+    gap: 3rem;
+
+    .nav__active {
+      color: $gold;
+    }
+
+    > a {
+      color: white;
+
+      text-decoration: none;
+
+      font-size: 1.5rem;
+      font-family: bookAntiqua;
+
+      transition: all 0.3s ease-in-out;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+
+      &::after {
+        content: "";
+
+        height: 0.1rem;
+        width: 0%;
+
+        background-color: $gold;
+
+        transition: all 0.3s ease-in-out;
+      }
+
+      &:hover {
+        color: $gold;
+      }
+
+      &:hover::after {
+        width: 100%;
+      }
+    }
+  }
+
+  > .Navbar__Links {
+    display: flex;
+
+    gap: 3rem;
+
+    .nav__active {
+      color: $gold;
+    }
+
+    > a {
+      color: white;
+
+      text-decoration: none;
+
+      font-size: 1.5rem;
+      font-family: bookAntiqua;
+
+      transition: all 0.3s ease-in-out;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+
+      &::after {
+        content: "";
+
+        height: 0.1rem;
+        width: 0%;
+
+        background-color: $gold;
+
+        transition: all 0.3s ease-in-out;
+      }
+
+      &:hover {
+        color: $gold;
+      }
+
+      &:hover::after {
+        width: 100%;
+      }
+    }
+  }
+
+  > .Navbar__Small {
+    display: none;
+
+    .Navbar__Small__Icon {
+      width: 2rem;
+      height: 2rem;
+
+      color: white;
+    }
+  }
+
+  @media screen and (max-width: 1000px) {
+    .Navbar__Home {
+      > a {
+        font-size: 1.4rem;
+      }
+    }
+
+    .Navbar__Links {
+      > a {
+        font-size: 1.4rem;
+      }
+    }
+  }
+
+  @media screen and (max-width: 700px) {
+    .Navbar__Home {
+      > a {
+        font-size: 1.2rem;
+      }
+    }
+
+    .Navbar__Links {
+      > a {
+        font-size: 1.2rem;
+      }
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    .Navbar__Links {
+      display: none;
+    }
+
+    .Navbar__Small {
+      display: block;
+    }
+  }
+}
+
+#Navbar__Side {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 0;
+  height: 100lvh;
+
+  background-color: white;
+
+  z-index: 100;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2rem;
+
+  font-weight: bold;
+
+  transition: all 0.3s ease-in-out;
+
+  overflow-x: hidden;
+  white-space: nowrap;
+
+  > a {
+    font-size: 2rem;
+
+    color: black;
+    text-decoration: none;
+
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      color: $gold;
+    }
+  }
+
+  > .Navbar__Side__Icon {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+
+    height: 50px;
+    width: 50px;
+
+    transition: all 0.3s ease-in-out;
+
+    cursor: pointer;
+
+    &:hover {
+      color: $gold;
+    }
+  }
+}
