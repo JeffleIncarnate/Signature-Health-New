@@ -11,19 +11,21 @@ export default function EMAIL_Contact({
 }: FormInputs) {
   return (
     <Html>
-      <Markdown children="# Contact form submission" />
-      <Markdown children="<hr />" />
-      <Markdown children="## Name" />
-      <Markdown children={name || "Unable to get Name"} />
+      <Markdown># Contact form Submission</Markdown>
 
-      <Markdown children="## Email" />
-      <Markdown children={email || "Unable to get Email"} />
+      <Markdown>{"<hr />"}</Markdown>
 
-      <Markdown children="## Phone Number" />
-      <Markdown children={phoneNumber || "Unable to get Phone Number"} />
+      <Markdown>## Name</Markdown>
+      <Markdown>{name || "Unable to get Name"}</Markdown>
 
-      <Markdown children="## Message" />
-      <Markdown children={message || "Unable to get Message"} />
+      <Markdown>## Email</Markdown>
+      <Markdown>{email || "Unable to get Email"}</Markdown>
+
+      <Markdown>## Phone Number</Markdown>
+      <Markdown>{phoneNumber || "Unable to get Phone Number"}</Markdown>
+
+      <Markdown>## Message</Markdown>
+      <Markdown>{message || "Unable to get Message"}</Markdown>
     </Html>
   );
 }
