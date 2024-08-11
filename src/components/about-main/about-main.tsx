@@ -1,4 +1,4 @@
-import "./aboutMain.scss";
+import "./about-main.scss";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -6,6 +6,7 @@ import {
   faBullhorn,
   faBarChart,
 } from "@fortawesome/free-solid-svg-icons";
+import Image from "next/image";
 
 const AboutMain = () => {
   return (
@@ -48,21 +49,27 @@ const AboutMain = () => {
           that honours their unique identity and respects their inherent rights.
           We stand as allies in the pursuit of holistic well-being for all,
           fostering a compassionate environment where the spirit of the Treaty
-          flourishes, and every individual’s tikanaga is valued.
+          flourishes, and every individuals tikanaga is valued.
         </p>
       </div>
 
       <div className="Boss">
         <div className="top">
           <div className="top__image">
-            <img src="/pictures/indeevar.jpeg" alt="" />
+            <Image
+              src="/pictures/indeevar.jpeg"
+              alt="Picture of Indeevar Duhan, Managaing Director of Signature Health"
+              fill={true}
+              style={{ borderRadius: "1rem" }}
+              sizes={""}
+            />
           </div>
           <div className="top__description">
             <h2>Message from Managaing Director</h2>
             <div>
               <p>
-                Hey there I'm Indeevar Duhan. My story starts in the early 90s
-                in Delhi, India. My early years were colourful, intriguing,
+                Hey there I&apos;m Indeevar Duhan. My story starts in the early
+                90s in Delhi, India. My early years were colourful, intriguing,
                 sometimes chaotic and often blissful. It continued when I landed
                 in Aotearoa/New Zealand at the age of 18 and I fell in love with
                 the place. So much so, that now I call it home.

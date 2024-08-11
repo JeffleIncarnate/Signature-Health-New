@@ -1,4 +1,4 @@
-import "./homeMain.scss";
+import "./home-main.scss";
 
 const HomeMain = () => {
   // console.log("e");

@@ -61,6 +61,14 @@
       justify-content: center;
       flex-direction: column;
 
+      @media screen and (max-width: 1400px) {
+        font-size: 1.1rem;
+      }
+
+      @media screen and (max-width: 900px) {
+        font-size: 1rem;
+      }
+
       &::after {
         content: "";
 
@@ -80,163 +88,36 @@
         width: 100%;
       }
     }
-  }
 
-  .Socials {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    .Socials {
+      display: flex;
+      align-items: center;
+      justify-content: center;
 
-    gap: 1rem;
+      gap: 1rem;
 
-    > a {
-      > * {
-        font-size: 1.5rem;
+      > a {
         color: white;
+        > * {
+          font-size: 1.5rem;
+          color: white;
 
-        padding: 0.5rem;
+          padding: 0.5rem;
 
-        border-radius: 999px;
-        border: solid white 0.3rem;
+          border-radius: 999px;
+          border: solid white 0.3rem;
 
-        transition: all 0.3s ease-in-out;
+          transition: all 0.3s ease-in-out;
 
-        cursor: pointer;
+          cursor: pointer;
 
-        &:hover {
-          color: $gold;
+          &:hover {
+            color: $gold;
 
-          border: solid $gold 0.3rem;
+            border: solid $gold 0.3rem;
+          }
         }
       }
     }
   }
 }
-
-// .Footer {
-//   width: 75%;
-
-//   margin: 2% 12.5%;
-//   padding: 5rem;
-
-//   display: flex;
-//   align-items: center;
-//   justify-content: space-between;
-//   flex-wrap: wrap;
-
-//   background-color: rgba($darkGreen, 0.1);
-//   border-radius: 1rem;
-
-//   @media screen and (max-width: 1200px) {
-//     width: 90%;
-
-//     margin: 2% 5%;
-//   }
-
-//   @media screen and (max-width: 860px) {
-//     .Name {
-//       margin-bottom: 2rem;
-//     }
-
-//     .SectionRight {
-//       width: 100%;
-//     }
-//   }
-
-//   > .Name {
-//     display: flex;
-//     align-items: center;
-//     justify-content: center;
-
-//     h2 {
-//       font-size: 3rem;
-
-//       @media screen and (max-width: 1400px) {
-//         font-size: 2.5rem;
-//       }
-
-//       @media screen and (max-width: 1200px) {
-//         font-size: 2rem;
-//       }
-//     }
-//   }
-
-//   > .SectionRight {
-//     display: flex;
-//     align-items: flex-start;
-//     justify-content: flex-start;
-//     flex-wrap: wrap;
-//     gap: 2rem;
-
-//     .Links {
-//       display: flex;
-//       align-items: flex-start;
-//       justify-content: center;
-//       flex-direction: column;
-//       gap: 0.5rem;
-
-//       font-weight: bold;
-
-//       > a {
-//         color: black;
-
-//         text-decoration: none;
-
-//         transition: all 0.3s ease-in-out;
-
-//         display: flex;
-//         align-items: center;
-//         justify-content: center;
-//         flex-direction: column;
-
-//         &::after {
-//           content: "";
-
-//           height: 0.1rem;
-//           width: 0%;
-
-//           background-color: $gold;
-
-//           transition: all 0.3s ease-in-out;
-//         }
-
-//         &:hover {
-//           color: $gold;
-//         }
-
-//         &:hover::after {
-//           width: 100%;
-//         }
-//       }
-//     }
-
-//     .Chat {
-//       display: flex;
-//       align-items: flex-start;
-//       justify-content: center;
-//       flex-direction: column;
-//       gap: 0.5rem;
-
-//       font-weight: bold;
-
-//       .Chat__Socials {
-//         display: flex;
-//         align-items: center;
-//         justify-content: space-evenly;
-//         gap: 1rem;
-
-//         > * {
-//           width: 1.5rem;
-//           height: 1.5rem;
-
-//           padding: 0.4rem;
-
-//           color: $gold;
-
-//           border-radius: 50%;
-//           border: 0.2rem solid $gold;
-//         }
-//       }
-//     }
-//   }
-// }

@@ -1,21 +1,15 @@
+import "./services-main.scss";
+
 import {
   faHeartBroken,
   faHome,
   faLock,
   faPersonCane,
   faWheelchair,
-  type IconDefinition,
 } from "@fortawesome/free-solid-svg-icons";
-import "./servicesMain.scss";
-
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-interface Service {
-  heading: string;
-  text: string;
-  itemsServiceHas: string[];
-  icon: IconDefinition;
-}
+import type { Service } from "@/core/types";
 
 const ServicesMain = () => {
   const services: Service[] = [

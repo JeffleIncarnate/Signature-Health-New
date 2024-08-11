@@ -1,6 +1,6 @@
-"use client";
-
 import "./navbar.scss";
+
+import Link from "next/link";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
@@ -10,27 +10,30 @@ const Navbar = ({ path }: { path: string }) => {
     <>
       <nav className="Navbar">
         <div className="Navbar__Home">
-          <a href="/" className={path === "/" ? "nav__active" : ""}>
+          <Link href="/" className={path === "/" ? "nav__active" : ""}>
             Home
-          </a>
+          </Link>
         </div>
 
         <div className="Navbar__Links">
-          <a href="/about" className={path === "/about" ? "nav__active" : ""}>
+          <Link
+            href="/about"
+            className={path === "/about" ? "nav__active" : ""}
+          >
             About Us
-          </a>
+          </Link>
           <a
             href="/services"
             className={path === "/services" ? "nav__active" : ""}
           >
             Our Services
           </a>
-          <a
+          <Link
             href="/contact"
             className={path === "/contact" ? "nav__active" : ""}
           >
             Contact Us
-          </a>
+          </Link>
         </div>
 
         <div className="Navbar__Small">
@@ -56,11 +59,10 @@ const Navbar = ({ path }: { path: string }) => {
           className="Navbar__Side__Icon"
           icon={faXmark}
         />
-        <a href="/about">About Us</a>
-        <a href="/services">Our Services</a>
-        <a href="/contact">Contact Us</a>
-        <a href="/ourTeam">Our Team</a>
-        <a href="/joinOurTeam">Join Our Team</a>
+        <Link href="/about">About Us</Link>
+        <Link href="/services">Our Services</Link>
+        <Link href="/contact">Contact Us</Link>
+        <Link href="/join-our-team">Join Our Team</Link>
       </div>
     </>
   );

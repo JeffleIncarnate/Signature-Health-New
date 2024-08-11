@@ -1,4 +1,4 @@
-import "./joinOurTeam.scss";
+import "./join-our-team.scss";
 
 const JoinOurTeam = () => {
   return (

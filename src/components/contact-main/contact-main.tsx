@@ -1,23 +1,14 @@
 "use client";
 
-import "./contactMain.scss";
-import "react-toastify/dist/ReactToastify.css";
+import "./contact-main.scss";
 
-import { ToastContainer, toast } from "react-toastify";
 import { useForm } from "react-hook-form";
-// import {
-//   QueryClient,
-//   QueryClientProvider,
-//   useMutation,
-// } from "@tanstack/react-query";
-// import axios from "axios";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircleNotch } from "@fortawesome/free-solid-svg-icons";
 import { useState } from "react";
-import type { FormInputs } from "@/core/types";
-import { ACTION_SendEmail } from "@/actions/sendEmail";
 
-// const queryClient = new QueryClient();
+import { ACTION_SendEmail } from "@/actions/sendEmail";
+import type { FormInputs } from "@/core/types";
 
 function Form() {
   const [formSuccess, setFormSuccess] = useState<boolean>(false);
@@ -26,7 +17,6 @@ function Form() {
   const {
     register,
     handleSubmit,
-    resetField,
     formState: { errors },
   } = useForm<FormInputs>();
 
@@ -51,8 +41,6 @@ function Form() {
             }, 2000);
           })}
         >
-          <ToastContainer />
-
           <form className="Form">
             <div className="Top__Wrapper">
               <input type="text" className="Honey_Pot" />

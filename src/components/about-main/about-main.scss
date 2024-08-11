@@ -150,10 +150,9 @@
       .top__image {
         width: 30%;
 
-        img {
-          width: 100%;
-          border-radius: 1rem;
-        }
+        aspect-ratio: 9/11;
+
+        position: relative;
       }
 
       .top__description {
