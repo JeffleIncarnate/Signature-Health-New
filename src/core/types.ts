@@ -21,3 +21,5 @@ export interface Service {
   itemsServiceHas: string[];
   icon: IconDefinition;
 }
+
+//
