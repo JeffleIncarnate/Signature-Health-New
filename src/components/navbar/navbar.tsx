@@ -22,12 +22,12 @@ const Navbar = ({ path }: { path: string }) => {
           >
             About Us
           </Link>
-          <a
+          <Link
             href="/services"
             className={path === "/services" ? "nav__active" : ""}
           >
             Our Services
-          </a>
+          </Link>
           <Link
             href="/contact"
             className={path === "/contact" ? "nav__active" : ""}

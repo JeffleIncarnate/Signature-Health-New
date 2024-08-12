@@ -3,6 +3,7 @@ declare global {
     interface ProcessEnv {
       RESEND_API_KEY: string;
       SEND_EMAIL_TO: string;
+      DOMAIN: string;
     }
   }
 }

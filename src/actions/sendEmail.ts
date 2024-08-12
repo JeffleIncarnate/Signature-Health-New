@@ -10,7 +10,7 @@ const resend = new Resend(process.env.RESEND_API_KEY);
 export async function ACTION_SendEmail({ data }: { data: FormInputs }) {
   try {
     await resend.emails.send({
-      from: "signaturehealth@dhruvrayat.com",
+      from: `contact@${process.env.DOMAIN}`,
       to: process.env.SEND_EMAIL_TO,
       subject: "Contact form",
       react: EMAIL_Contact({ ...data }),
