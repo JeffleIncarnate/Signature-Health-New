@@ -1,7 +1,6 @@
 import "./home-main.scss";
 
 const HomeMain = () => {
-  // console.log("e");
   return (
     <main className="HomeMain">
       <div className="Mission">
@@ -26,7 +25,7 @@ const HomeMain = () => {
       </div>
 
       <div className="TeTiriti">
-        <h2>Honouring The Te Tiriti</h2>
+        <h2>Honouring Te Tiriti</h2>
         <p>
           Our team is Guided by the enduring principles of Te Tiriti (The Treaty
           of Waitangi) and a steadfast commitment to Equity. We strive to

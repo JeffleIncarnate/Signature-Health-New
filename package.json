@@ -25,7 +25,8 @@
     "react-hook-form": "^7.52.2",
     "react-toastify": "^10.0.5",
     "resend": "^3.5.0",
-    "sass": "^1.77.8"
+    "sass": "^1.77.8",
+    "signature-health-next": "link:"
   },
   "devDependencies": {
     "@types/node": "^20",

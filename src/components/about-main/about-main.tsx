@@ -70,19 +70,22 @@ const AboutMain = () => {
               <p>
                 Hey there I&apos;m Indeevar Duhan. My story starts in the early
                 90s in Delhi, India. My early years were colourful, intriguing,
-                sometimes chaotic and often blissful. It continued when I landed
-                in Aotearoa/New Zealand at the age of 18 and I fell in love with
-                the place. So much so, that now I call it home.
-              </p>
-              <p>
-                I am a Registered nurse with experience spanning almost a
-                decade. My work has been entirely aged care related and has been
-                a truly life changing experience. Resilience of our older
-                generation has humbled me many times and their life experiences
-                have left me inspired. Their wisdom is enlightening, and their
-                warmth can be felt when you hold their hand. It drives me to
-                continue to deliver positive outcomes for them as they live in
-                their homes with their families and friends.
+                sometimes chaotic and often blissful. The bliss continued when I
+                landed in Aotearoa/New Zealand at the age of 18 and I fell in
+                love with the place. So much so, that now I call it home. I am a
+                Registered nurse with experience spanning almost a decade. My
+                work has been entirely aged care related and it has been a truly
+                life changing experience. Resilience of our older generation has
+                humbled me many times and their life experiences have left me
+                inspired. Their wisdom is enlightening, and their warmth can be
+                felt when you hold their hand. It drives me to continue to work
+                with them in community and home care environment where they
+                cherish their homes and families. At Signature health, our goal
+                is to provide excellent healthcare to our clients in the comfort
+                of their homes. We cater to unique need of each individual and
+                consistently work with them to understand their changing needs.
+                We aspire to become largest and most trusted home care provider
+                in New Zealand in the coming years.
               </p>
             </div>
           </div>
@@ -90,12 +93,13 @@ const AboutMain = () => {
 
         <div className="bottom">
           <p>
-            At Signature health, we understand the scope and magnitude of the
-            mission we are trying to scale. Our team is guided by the principles
-            of Te Tiriti, The Treaty of Waitangi and we acknowledge
-            multicultural nature of Aotearoa/New Zealand. We strongly believe in
-            true power of the collective and cherish all the fun it brings along
-            with it.
+            We are aware of the scope and magnitude of the mission we are trying
+            to achieve. We strongly believe in true power of the collective and
+            cherish all the fun it brings along with it. Our team is guided by
+            the principles of Te Tiriti, The Treaty of Waitangi and we
+            acknowledge multicultural nature of Aotearoa/New Zealand. It’s a
+            combination that will enable us to achieve our mission and we are
+            confident of delivering positive outcomes for people we serve.
           </p>
         </div>
       </div>
